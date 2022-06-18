@@ -1,0 +1,98 @@
+*  {  
+    box-sizing: border-box;    
+    padding: 0;  
+      margin: 0;  
+ }  
+
+ body {
+    /*min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .main-container {   
+     width: 800px ;   
+     display: flex;
+     border-radius: 10px;
+     overflow: hidden;
+     margin: 100px auto;
+ }  
+
+ .cardItem {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    /* line-height: 1.5; */
+ }
+
+ .cardItem h2 {
+    color: hsl(0, 0%, 95%) ;
+ }
+
+
+ .cardItem p {
+    color: hsla(0, 0%, 0.75%);
+    font-size: 15px;
+    flex-grow: 1;
+
+
+ }
+
+ .cardItem button {
+    background-color: hsl(0, 0%, 95%) ;
+    padding: 15px 30px; 
+    border: none; 
+    outline: none;
+    border-radius: 20px;
+    transition: all 0.3 ease;
+}
+
+.cardItem button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    padding: 13px 28px;
+    cursor: pointer;
+
+}
+ 
+ .first {
+    background-color: hsl(31, 77%, 52%);  
+ }
+ .first button {
+    color: hsl(31, 77%, 52%);
+ }
+
+ .second {
+     background-color: hsl(184, 100%, 22%);
+     /* flex: 1; */
+     /* width: 33.3%, */
+ }
+ .second button {
+    color: hsl(184, 100%, 22%);
+ }
+
+
+ .third {
+    background-color: hsl(179, 100%, 13%);
+ }
+ .third button {
+    color: hsl(179, 100%, 13%);
+ }
+ @media screen and (max-width: 375px) {
+   body {
+      padding: 70px 30px;
+   }
+   .main-container {
+      flex-direction: column;
+   }
+   .first {
+      border-bottom-left-radius: 0;
+   }
+   .second {
+      border-top-right-radius: 0;
+   }
+ }
